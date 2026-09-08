@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تقرير مبيعات  جدة (حتى أغسطس 2026)</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .nav-bar {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .nav-bar a {
+            padding: 10px 20px;
+            margin: 0 5px;
+            text-decoration: none;
+            color: #007bff;
+            background-color: #fff;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .nav-bar a:hover {
+            background-color: #007bff;
+            color: white;
+        }
+        .content-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            font-size: 0.9em;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #e9ecef;
+            color: #333;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .total-row {
+            background-color: #ffe0b2 !important;
+            font-weight: bold;
+        }
+        .net-profit-pos {
+            color: #28a745; 
+            font-weight: bold;
+        }
+        .net-profit-neg {
+            color: #dc3545; 
+            font-weight: bold;
+        }
+        #notes-section {
+            border-right: 5px solid #4caf50; /* تمييز قسم الملاحظات */
+        }
+        #notes-section ul {
+            padding-right: 20px;
+            list-style-type: none; /* إزالة التنقيط الافتراضي */
+        }
+        #notes-section li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-right: 25px;
+        }
+        #notes-section li::before {
+            content: "•"; /* استخدام نقطة كعلامة */
+            color: #4caf50;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-right: 5px;
+            position: absolute;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>📊 تقرير مبيعات فروع  بجدة</h1>
+        <p>حتى أغسطس 2026</p>
+    </div>
+
+    <div class="nav-bar">
+        <a href="#total-sales">إجمالي المبيعات الشهرية</a>
+        <a href="#hamdaniya">تقرير الحمدانية</a>
+        <a href="#naseem">تقرير النسيم</a>
+        <a href="#marwah">تقرير المروة</a>
+        <a href="#notes-section">الملاحظات</a>
+    </div>
+
+    <div id="total-sales" class="content-section">
+        <h2>💰 إجمالي المبيعات الشهرية لكل فرع</h2>
+        <p>مقارنة المبيعات الشهرية لكل فرع (بالريال السعودي)</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>الشهر</th>
+                    <th>مبيعات الحمدانية</th>
+                    <th>مبيعات النسيم</th>
+                    <th>مبيعات المروة</th>
+                    <th>إجمالي مبيعات الفروع</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>يناير 2024</td><td>68,899.80</td><td>140,194.66</td><td>-</td><td>209,094.46</td></tr>
+                <tr><td>فبراير 2024</td><td>122,179.67</td><td>197,463.15</td><td>-</td><td>319,642.82</td></tr>
+                <tr><td>مارس 2024</td><td>112,385.73</td><td>172,950.77</td><td>-</td><td>285,336.50</td></tr>
+                <tr><td>أبريل 2024</td><td>115,407.02</td><td>188,273.18</td><td>-</td><td>303,680.20</td></tr>
+                <tr><td>مايو 2024</td><td>112,761.21</td><td>227,051.29</td><td>-</td><td>339,812.50</td></tr>
+                <tr><td>يونيو 2024</td><td>109,471.67</td><td>199,779.22</td><td>-</td><td>309,250.89</td></tr>
+                <tr><td>يوليو 2024</td><td>104,971.23</td><td>172,848.99</td><td>-</td><td>277,820.22</td></tr>
+                <tr><td>أغسطس 2024</td><td>105,975.53</td><td>211,979.37</td><td>-</td><td>317,954.90</td></tr>
+                <tr><td>سبتمبر 2024</td><td>99,152.20</td><td>190,115.30</td><td>-</td><td>289,267.50</td></tr>
+                <tr><td>أكتوبر 2024</td><td>98,976.31</td><td>220,670.47</td><td>-</td><td>319,646.78</td></tr>
+                <tr><td>نوفمبر 2024</td><td>88,606.76</td><td>161,373.83</td><td>-</td><td>249,980.59</td></tr>
+                <tr><td>ديسمبر 2024</td><td>93,813.02</td><td>167,915.66</td><td>-</td><td>261,728.68</td></tr>
+                <tr><td>يناير 2025</td><td>116,241.32</td><td>164,130.94</td><td>112,656.08</td><td>393,028.34</td></tr>
+                <tr><td>فبراير 2025</td><td>84,101.54</td><td>148,099.56</td><td>127,890.97</td><td>360,092.07</td></tr>
+                <tr><td>مارس 2025</td><td>136,080.74</td><td>134,367.93</td><td>130,261.22</td><td>400,709.89</td></tr>
+                <tr><td>أبريل 2025</td><td>98,368.61</td><td>142,749.00</td><td>113,527.91</td><td>354,645.52</td></tr>
+                <tr><td>مايو 2025</td><td>109,391.26</td><td>175,727.48</td><td>122,639.77</td><td>407,758.51</td></tr>
+                <tr><td>يونيو 2025</td><td>116,143.76</td><td>163,574.00</td><td>54,507.13</td><td>334,224.89</td></tr>
+                <tr><td>يوليو 2025</td><td>105,233.78</td><td>128,518.95</td><td>95,972.69</td><td>329,725.42</td></tr>
+                <tr><td>أغسطس 2025</td><td>80,001.74</td><td>121,544.26</td><td>93,242.45</td><td>294,788.45</td></tr>
+                <tr><td>سبتمبر 2025</td><td>71,475.04</td><td>102,390.10</td><td>80,909.82</td><td>254,774.96</td></tr>
+                            <tr><td>2025-10</td><td>84,794.00</td><td>103,380.22</td><td>88,481.78</td><td>276,656.00</td></tr>
+                <tr><td>2025-11</td><td>81,235.04</td><td>106,839.87</td><td>82,338.23</td><td>270,413.14</td></tr>
+                <tr><td>2025-12</td><td>85,644.44</td><td>108,577.48</td><td>78,726.70</td><td>272,948.62</td></tr>
+                <tr><td>2026-01</td><td>91,194.58</td><td>109,224.82</td><td>106,251.61</td><td>306,671.01</td></tr>
+                <tr><td>2026-02</td><td>52,962.51</td><td>74,227.00</td><td>97,522.19</td><td>224,711.70</td></tr>
+                <tr><td>2026-03</td><td>89,556.17</td><td>83,809.35</td><td>104,229.61</td><td>277,595.13</td></tr>
+                <tr><td>2026-04</td><td>69,749.00</td><td>84,416.39</td><td>79,979.17</td><td>234,144.56</td></tr>
+                <tr><td>2026-05</td><td>70,607.04</td><td>80,283.00</td><td>90,290.48</td><td>241,180.52</td></tr>
+                <tr><td>2026-06</td><td>65,012.26</td><td>84,820.30</td><td>87,875.35</td><td>237,707.91</td></tr>
+                <tr><td>2026-07</td><td>54,022.39</td><td>67,993.36</td><td>73,194.56</td><td>195,210.31</td></tr>
+                <tr><td>2026-08</td><td>41,640.38</td><td>53,082.42</td><td>54,648.70</td><td>149,371.50</td></tr>
+                </tbody>
+            <tfoot>
+                <tr class="total-row">
+                    <td>المجموع الكلي</td>
+                    <td>2,936,055.73</td>
+                    <td>4,488,372.32</td>
+                    <td>1,875,146.41</td>
+                    <td>9,299,574.46</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <div id="hamdaniya" class="content-section">
+        <h2>🛍️ التقرير التفصيلي - فرع الحمدانية</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>الأشهر</th>
+                    <th>المبيعات</th>
+                    <th>إجمالي مبيعات تطبيقات التوصيل</th>
+                    <th>تكلفة البضاعة</th>
+                    <th>الربح</th>
+                    <th>عمولة المانح ٧٪</th>
+                    <th>عمولة تطبيقات التوصيل</th>
+                    <th>الرواتب</th>
+                    <th>الإيجار</th>
+                    <th>مصاريف التوصيل و التسويق</th>
+                    <th>مصاريف الكهرباء والمياه وسكن الموظفين</th>
+                    <th>مصاريف أخرى</th>
+                    <th>الصافي</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>2024-01</td><td>68,899.80</td><td>40,303.96</td><td>26,455.17</td><td>42,444.63</td><td>4,822.99</td><td>10,075.99</td><td>12,310</td><td>10,000</td><td>5,000</td><td>5,511.98</td><td>2,066.99</td><td class="net-profit-neg">-7,343.33</td></tr>
+                <tr><td>2024-02</td><td>122,179.67</td><td>51,079.70</td><td>54,426.40</td><td>67,753.26</td><td>8,552.58</td><td>12,769.93</td><td>12,310</td><td>10,000</td><td>5,000</td><td>9,774.37</td><td>3,665.39</td><td class="net-profit-pos">5,681.00</td></tr>
+                <tr><td>2024-03</td><td>112,385.73</td><td>58,868.64</td><td>43,574.92</td><td>68,810.82</td><td>7,867.00</td><td>14,717.16</td><td>12,310</td><td>10,000</td><td>5,000</td><td>8,990.86</td><td>3,371.57</td><td class="net-profit-pos">6,554.22</td></tr>
+                <tr><td>2024-04</td><td>115,407.02</td><td>68,195.53</td><td>45,179.26</td><td>70,227.75</td><td>8,078.49</td><td>17,048.88</td><td>12,310</td><td>10,000</td><td>5,000</td><td>9,232.56</td><td>3,462.21</td><td class="net-profit-pos">5,095.61</td></tr>
+                <tr><td>2024-05</td><td>112,761.21</td><td>59,120.34</td><td>46,201.43</td><td>66,559.78</td><td>7,893.28</td><td>14,780.09</td><td>12,310</td><td>10,000</td><td>5,000</td><td>9,020.90</td><td>3,382.84</td><td class="net-profit-pos">4,172.68</td></tr>
+                <tr><td>2024-06</td><td>109,471.67</td><td>98,037.67</td><td>42,246.03</td><td>67,225.64</td><td>7,663.02</td><td>24,509.42</td><td>12,310</td><td>10,000</td><td>5,000</td><td>8,757.73</td><td>1,094.72</td><td class="net-profit-neg">-2,109.24</td></tr>
+                <tr><td>2024-07</td><td>104,971.23</td><td>97,342.16</td><td>40,316.60</td><td>64,654.63</td><td>7,347.99</td><td>24,335.54</td><td>12,310</td><td>10,000</td><td>5,000</td><td>8,397.70</td><td>2,099.42</td><td class="net-profit-neg">-4,836.02</td></tr>
+                <tr><td>2024-08</td><td>105,975.53</td><td>96,900.49</td><td>42,912.32</td><td>63,063.21</td><td>7,418.29</td><td>24,225.12</td><td>13,941</td><td>10,000</td><td>5,000</td><td>8,478.04</td><td>3,179.27</td><td class="net-profit-neg">-9,178.51</td></tr>
+                <tr><td>2024-09</td><td>99,152.20</td><td>91,414.53</td><td>40,680.90</td><td>58,471.29</td><td>6,940.65</td><td>22,853.63</td><td>14,410</td><td>10,000</td><td>5,000</td><td>7,932.18</td><td>991.52</td><td class="net-profit-neg">-9,656.69</td></tr>
+                <tr><td>2024-10</td><td>98,976.31</td><td>86,907.26</td><td>35,955.81</td><td>63,020.50</td><td>6,928.34</td><td>21,726.82</td><td>11,710</td><td>10,000</td><td>5,000</td><td>7,918.10</td><td>1,979.53</td><td class="net-profit-neg">-2,242.28</td></tr>
+                <tr><td>2024-11</td><td>88,606.76</td><td>74,865.27</td><td>29,031.12</td><td>59,575.64</td><td>6,202.47</td><td>18,716.32</td><td>11,160</td><td>10,000</td><td>5,000</td><td>7,088.54</td><td>886.07</td><td class="net-profit-pos">522.24</td></tr>
+                <tr><td>2024-12</td><td>93,813.02</td><td>81,386.62</td><td>31,211.67</td><td>62,601.35</td><td>6,566.91</td><td>20,346.66</td><td>10,160</td><td>10,000</td><td>5,000</td><td>7,505.04</td><td>2,814.39</td><td class="net-profit-pos">208.35</td></tr>
+                <tr><td>2025-01</td><td>116,241.32</td><td>107,521.17</td><td>41,307.61</td><td>74,933.71</td><td>8,136.89</td><td>26,880.29</td><td>12,153</td><td>10,000</td><td>3,333.33</td><td>9,299.31</td><td>3,487.24</td><td class="net-profit-pos">1,643.64</td></tr>
+                <tr><td>2025-02</td><td>84,101.54</td><td>80,565.77</td><td>28,864.57</td><td>55,236.97</td><td>5,887.11</td><td>20,141.44</td><td>11,510</td><td>10,000</td><td>3,333.33</td><td>6,728.12</td><td>2,523.05</td><td class="net-profit-neg">-4,886.09</td></tr>
+                <tr><td>2025-03</td><td>136,080.74</td><td>122,298.85</td><td>42,015.41</td><td>94,065.33</td><td>9,525.65</td><td>30,574.71</td><td>13,310</td><td>10,000</td><td>3,333.33</td><td>10,886.46</td><td>3,402.02</td><td class="net-profit-pos">13,033.16</td></tr>
+                <tr><td>2025-04</td><td>98,368.61</td><td>89,034.40</td><td>30,550.76</td><td>67,817.85</td><td>6,885.80</td><td>22,258.60</td><td>11,510</td><td>10,000</td><td>3,333.33</td><td>7,869.49</td><td>2,951.06</td><td class="net-profit-pos">3,009.57</td></tr>
+                <tr><td>2025-05</td><td>109,391.26</td><td>94,628.95</td><td>35,737.77</td><td>73,653.49</td><td>7,657.39</td><td>23,657.24</td><td>12,210</td><td>10,000</td><td>2,166.67</td><td>8,751.30</td><td>3,281.74</td><td class="net-profit-pos">5,929.15</td></tr>
+                <tr><td>2025-06</td><td>116,143.76</td><td>107,031.82</td><td>41,220.26</td><td>74,923.49</td><td>8,130.06</td><td>26,757.96</td><td>13,290</td><td>10,000</td><td>2,166.67</td><td>9,291.50</td><td>3,484.31</td><td class="net-profit-pos">1,802.99</td></tr>
+                <tr><td>2025-07</td><td>105,233.78</td><td>97,168.60</td><td>36,975.15</td><td>68,258.63</td><td>7,366.36</td><td>24,292.15</td><td>14,450</td><td>10,000</td><td>2,166.67</td><td>8,418.70</td><td>2,104.68</td><td class="net-profit-neg">-539.93</td></tr>
+                <tr><td>2025-08</td><td>80,001.74</td><td>75,835.75</td><td>27,253.10</td><td>52,748.64</td><td>5,600.12</td><td>18,958.94</td><td>9,350</td><td>10,000</td><td>2,166.67</td><td>6,400.14</td><td>2,400.05</td><td class="net-profit-neg">-2,127.28</td></tr>
+                <tr><td>2025-09</td><td>71,475.04</td><td>64,479.30</td><td>25,158.75</td><td>46,316.30</td><td>5,003.25</td><td>16,119.83</td><td>9,350</td><td>10,000</td><td>2,166.67</td><td>5,718.00</td><td>2,144.25</td><td class="net-profit-neg">-4,185.70</td></tr>
+                            <tr><td>2025-10</td><td>84,794.00</td><td>68,683.14</td><td>35,613.48</td><td class="net-profit-pos">49,180.52</td><td>4,239.70</td><td>17,170.78</td><td>7,300.00</td><td>10,000.00</td><td>2,166.67</td><td>6,783.52</td><td>2,119.85</td><td class="net-profit-neg">-600.00</td></tr>
+                <tr><td>2025-11</td><td>81,235.04</td><td>65,800.38</td><td>34,118.72</td><td class="net-profit-pos">47,116.32</td><td>4,061.75</td><td>16,450.10</td><td>7,300.00</td><td>10,000.00</td><td>2,166.67</td><td>6,498.80</td><td>2,030.88</td><td class="net-profit-neg">-1,391.88</td></tr>
+                <tr><td>2025-12</td><td>85,644.44</td><td>69,372.00</td><td>35,970.66</td><td class="net-profit-pos">49,673.78</td><td>4,282.22</td><td>17,343.00</td><td>7,300.00</td><td>10,000.00</td><td>2,166.67</td><td>6,851.56</td><td>2,141.11</td><td class="net-profit-neg">-410.78</td></tr>
+                <tr><td>2026-01</td><td>91,194.58</td><td>73,867.61</td><td>38,301.72</td><td class="net-profit-pos">52,892.86</td><td>4,559.73</td><td>18,466.90</td><td>7,300.00</td><td>10,000.00</td><td>2,166.67</td><td>7,295.57</td><td>2,279.86</td><td class="net-profit-pos">824.13</td></tr>
+                <tr><td>2026-02</td><td>52,962.51</td><td>42,899.63</td><td>22,244.25</td><td class="net-profit-pos">30,718.26</td><td>2,648.13</td><td>10,724.91</td><td>7,300.00</td><td>10,000.00</td><td>2,166.67</td><td>4,237.00</td><td>1,324.06</td><td class="net-profit-neg">-7,682.51</td></tr>
+                <tr><td>2026-03</td><td>89,556.17</td><td>72,540.50</td><td>37,613.59</td><td class="net-profit-pos">51,942.58</td><td>4,477.81</td><td>18,135.12</td><td>7,300.00</td><td>10,000.00</td><td>2,166.67</td><td>7,164.49</td><td>2,238.90</td><td class="net-profit-pos">459.58</td></tr>
+                <tr><td>2026-04</td><td>69,749.00</td><td>56,496.69</td><td>29,294.58</td><td class="net-profit-pos">40,454.42</td><td>3,487.45</td><td>14,124.17</td><td>7,300.00</td><td>10,000.00</td><td>2,166.67</td><td>5,579.92</td><td>1,743.73</td><td class="net-profit-neg">-3,947.51</td></tr>
+                <tr><td>2026-05</td><td>70,607.04</td><td>57,191.70</td><td>29,654.96</td><td class="net-profit-pos">40,952.08</td><td>3,530.35</td><td>14,297.92</td><td>7,300.00</td><td>10,000.00</td><td>2,166.67</td><td>5,648.56</td><td>1,765.18</td><td class="net-profit-neg">-3,756.60</td></tr>
+                <tr><td>2026-06</td><td>65,012.26</td><td>52,659.93</td><td>27,305.15</td><td class="net-profit-pos">37,707.11</td><td>3,250.61</td><td>13,164.98</td><td>7,300.00</td><td>10,000.00</td><td>2,166.67</td><td>5,200.98</td><td>1,625.31</td><td class="net-profit-neg">-5,001.44</td></tr>
+                <tr><td>2026-07</td><td>54,022.39</td><td>43,758.14</td><td>22,689.40</td><td class="net-profit-pos">31,332.99</td><td>2,701.12</td><td>10,939.53</td><td>7,300.00</td><td>10,000.00</td><td>2,166.67</td><td>4,321.79</td><td>1,350.56</td><td class="net-profit-neg">-7,446.68</td></tr>
+                <tr><td>2026-08</td><td>41,640.38</td><td>33,728.71</td><td>17,488.96</td><td class="net-profit-pos">24,151.42</td><td>2,082.02</td><td>8,432.18</td><td>7,300.00</td><td>10,000.00</td><td>2,166.67</td><td>3,331.23</td><td>1,041.01</td><td class="net-profit-neg">-10,201.69</td></tr>
+</tbody>
+            <tfoot>
+                <tr class="total-row">
+                    <td>الإجمالي</td>
+                    <td>2,936,055.73</td>
+                    <td>2,379,985.21</td>
+                    <td>1,117,570.48</td>
+                    <td>1,818,485.25</td>
+                    <td>189,795.53</td>
+                    <td>594,996.31</td>
+                    <td>80,300.00</td>
+                    <td>110,000.00</td>
+                    <td>23,833.37</td>
+                    <td>62,913.42</td>
+                    <td>19,660.45</td>
+                    <td class="net-profit-neg">-39,155.38</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <div id="naseem" class="content-section">
+        <h2>🛍️ التقرير التفصيلي - فرع النسيم</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>الأشهر</th>
+                    <th>المبيعات</th>
+                    <th>إجمالي مبيعات تطبيقات التوصيل</th>
+                    <th>تكلفة البضاعة</th>
+                    <th>الربح</th>
+                    <th>عمولة المانح ٧٪</th>
+                    <th>عمولة تطبيقات التوصيل</th>
+                    <th>الرواتب</th>
+                    <th>الإيجار</th>
+                    <th>مصاريف التوصيل و التسويق</th>
+                    <th>مصاريف الكهرباء والمياه وسكن الموظفين</th>
+                    <th>مصاريف أخرى</th>
+                    <th>الصافي</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>2024-01</td><td>140,194.66</td><td>101,786.13</td><td>52,896.59</td><td>87,298.07</td><td>9,813.63</td><td>25,446.53</td><td>0</td><td>11,646.17</td><td>5,000</td><td>11,215.57</td><td>4,205.84</td><td class="net-profit-pos">19,970.33</td></tr>
+                <tr><td>2024-02</td><td>197,463.15</td><td>136,880.61</td><td>73,321.13</td><td>124,142.02</td><td>13,822.42</td><td>34,220.15</td><td>0</td><td>11,646.17</td><td>5,000</td><td>15,797.05</td><td>5,923.89</td><td class="net-profit-pos">37,732.33</td></tr>
+                <tr><td>2024-03</td><td>172,950.77</td><td>124,270.58</td><td>93,012.44</td><td>79,938.33</td><td>12,106.55</td><td>31,067.65</td><td>0</td><td>11,646.17</td><td>5,000</td><td>13,836.06</td><td>5,188.52</td><td class="net-profit-pos">1,093.37</td></tr>
+                <tr><td>2024-04</td><td>188,273.18</td><td>133,959.71</td><td>71,285.61</td><td>116,987.57</td><td>13,179.12</td><td>33,489.93</td><td>0</td><td>11,646.17</td><td>5,000</td><td>15,061.85</td><td>5,648.20</td><td class="net-profit-pos">32,962.30</td></tr>
+                <tr><td>2024-05</td><td>227,051.29</td><td>178,296.68</td><td>85,848.97</td><td>141,202.32</td><td>15,893.59</td><td>44,574.17</td><td>0</td><td>11,646.17</td><td>5,000</td><td>18,164.10</td><td>6,811.54</td><td class="net-profit-pos">39,112.75</td></tr>
+                <tr><td>2024-06</td><td>199,779.22</td><td>193,517.22</td><td>73,579.41</td><td>126,199.81</td><td>13,984.55</td><td>48,379.31</td><td>0</td><td>11,646.17</td><td>5,000</td><td>15,982.34</td><td>1,997.79</td><td class="net-profit-pos">29,209.66</td></tr>
+                <tr><td>2024-07</td><td>172,848.99</td><td>165,310.95</td><td>62,951.83</td><td>109,897.17</td><td>12,099.43</td><td>41,327.74</td><td>0</td><td>11,646.17</td><td>5,000</td><td>13,827.92</td><td>3,456.98</td><td class="net-profit-pos">22,538.93</td></tr>
+                <tr><td>2024-08</td><td>211,979.37</td><td>207,997.08</td><td>98,739.06</td><td>113,240.31</td><td>14,838.56</td><td>51,999.27</td><td>13,510</td><td>11,646.17</td><td>5,000</td><td>16,958.35</td><td>6,359.38</td><td class="net-profit-neg">-7,071.41</td></tr>
+                <tr><td>2024-09</td><td>190,115.30</td><td>185,802.35</td><td>73,057.29</td><td>117,058.01</td><td>13,308.07</td><td>46,450.59</td><td>13,610</td><td>11,646.17</td><td>5,000</td><td>15,209.22</td><td>1,901.15</td><td class="net-profit-pos">9,932.81</td></tr>
+                <tr><td>2024-10</td><td>220,670.47</td><td>202,168.22</td><td>80,732.56</td><td>139,937.91</td><td>15,446.93</td><td>50,542.06</td><td>16,610</td><td>11,646.17</td><td>5,000</td><td>17,653.64</td><td>4,413.41</td><td class="net-profit-pos">18,625.70</td></tr>
+                <tr><td>2024-11</td><td>161,373.83</td><td>145,073.70</td><td>51,814.61</td><td>109,559.21</td><td>11,296.17</td><td>36,268.43</td><td>15,010</td><td>11,646.17</td><td>5,000</td><td>12,909.91</td><td>1,613.74</td><td class="net-profit-pos">15,814.81</td></tr>
+                <tr><td>2024-12</td><td>167,915.66</td><td>148,884.21</td><td>54,439.16</td><td>113,476.50</td><td>11,754.10</td><td>37,221.05</td><td>16,788</td><td>11,646.17</td><td>5,000</td><td>13,433.25</td><td>5,037.47</td><td class="net-profit-pos">12,596.46</td></tr>
+                <tr><td>2025-01</td><td>164,130.94</td><td>153,544.53</td><td>56,517.37</td><td>107,613.57</td><td>11,489.17</td><td>38,386.13</td><td>16,910</td><td>11,646.17</td><td>3,333.33</td><td>13,130.48</td><td>4,923.93</td><td class="net-profit-pos">7,794.36</td></tr>
+                <tr><td>2025-02</td><td>148,099.56</td><td>139,517.14</td><td>49,315.72</td><td>98,783.83</td><td>10,366.97</td><td>34,879.29</td><td>16,910</td><td>11,646.17</td><td>3,333.33</td><td>11,847.96</td><td>4,442.99</td><td class="net-profit-pos">5,357.12</td></tr>
+                <tr><td>2025-03</td><td>134,367.93</td><td>109,219.62</td><td>44,015.93</td><td>90,352.00</td><td>9,405.76</td><td>27,304.91</td><td>16,910</td><td>11,646.17</td><td>3,333.33</td><td>10,749.43</td><td>3,359.20</td><td class="net-profit-pos">7,643.21</td></tr>
+                <tr><td>2025-04</td><td>142,749.00</td><td>129,365.85</td><td>46,567.14</td><td>96,181.86</td><td>9,992.43</td><td>32,341.46</td><td>16,910</td><td>11,646.17</td><td>3,333.33</td><td>11,419.92</td><td>4,282.47</td><td class="net-profit-pos">6,256.08</td></tr>
+                <tr><td>2025-05</td><td>175,727.48</td><td>161,665.61</td><td>59,158.20</td><td>116,569.29</td><td>12,300.92</td><td>40,416.40</td><td>20,285</td><td>11,646.17</td><td>2,166.67</td><td>14,058.20</td><td>5,271.82</td><td class="net-profit-pos">10,424.10</td></tr>
+                <tr><td>2025-06</td><td>163,574.00</td><td>154,361.90</td><td>58,436.98</td><td>105,137.02</td><td>11,450.18</td><td>38,590.48</td><td>18,310</td><td>11,646.17</td><td>2,166.67</td><td>13,085.92</td><td>4,907.22</td><td class="net-profit-pos">4,980.39</td></tr>
+                <tr><td>2025-07</td><td>128,518.95</td><td>118,428.05</td><td>44,000.28</td><td>84,518.67</td><td>8,996.33</td><td>29,607.01</td><td>18,080</td><td>11,646.17</td><td>2,166.67</td><td>10,281.52</td><td>2,570.38</td><td class="net-profit-pos">1,170.60</td></tr>
+                <tr><td>2025-08</td><td>121,544.26</td><td>116,936.65</td><td>41,457.12</td><td>80,087.14</td><td>8,508.10</td><td>29,234.16</td><td>16,910</td><td>11,646.17</td><td>2,166.67</td><td>9,723.54</td><td>3,646.33</td><td class="net-profit-neg">-1,747.82</td></tr>
+                <tr><td>2025-09</td><td>102,390.10</td><td>95,549.87</td><td>35,794.10</td><td>66,596.00</td><td>7,167.31</td><td>23,887.47</td><td>15,410</td><td>11,646.17</td><td>2,166.67</td><td>8,191.21</td><td>3,071.70</td><td class="net-profit-neg">-4,944.52</td></tr>
+                            <tr><td>2025-10</td><td>103,380.22</td><td>89,940.79</td><td>43,419.69</td><td class="net-profit-pos">59,960.53</td><td>5,169.01</td><td>22,485.20</td><td>9,120.00</td><td>11,646.17</td><td>2,166.67</td><td>8,270.42</td><td>2,584.51</td><td class="net-profit-neg">-1,481.44</td></tr>
+                <tr><td>2025-11</td><td>106,839.87</td><td>92,950.69</td><td>44,872.75</td><td class="net-profit-pos">61,967.12</td><td>5,341.99</td><td>23,237.67</td><td>9,120.00</td><td>11,646.17</td><td>2,166.67</td><td>8,547.19</td><td>2,671.00</td><td class="net-profit-neg">-763.57</td></tr>
+                <tr><td>2025-12</td><td>108,577.48</td><td>94,462.41</td><td>45,602.54</td><td class="net-profit-pos">62,974.94</td><td>5,428.87</td><td>23,615.60</td><td>9,120.00</td><td>11,646.17</td><td>2,166.67</td><td>8,686.20</td><td>2,714.44</td><td class="net-profit-neg">-403.01</td></tr>
+                <tr><td>2026-01</td><td>109,224.82</td><td>95,025.59</td><td>45,874.42</td><td class="net-profit-pos">63,350.40</td><td>5,461.24</td><td>23,756.40</td><td>9,120.00</td><td>11,646.17</td><td>2,166.67</td><td>8,737.99</td><td>2,730.62</td><td class="net-profit-neg">-268.69</td></tr>
+                <tr><td>2026-02</td><td>74,227.00</td><td>64,577.49</td><td>31,175.34</td><td class="net-profit-pos">43,051.66</td><td>3,711.35</td><td>16,144.37</td><td>9,120.00</td><td>11,646.17</td><td>2,166.67</td><td>5,938.16</td><td>1,855.68</td><td class="net-profit-neg">-7,530.73</td></tr>
+                <tr><td>2026-03</td><td>83,809.35</td><td>72,914.13</td><td>35,199.93</td><td class="net-profit-pos">48,609.42</td><td>4,190.47</td><td>18,228.53</td><td>9,120.00</td><td>11,646.17</td><td>2,166.67</td><td>6,704.75</td><td>2,095.23</td><td class="net-profit-neg">-5,542.40</td></tr>
+                <tr><td>2026-04</td><td>84,416.39</td><td>73,442.26</td><td>35,454.88</td><td class="net-profit-pos">48,961.51</td><td>4,220.82</td><td>18,360.56</td><td>9,120.00</td><td>11,646.17</td><td>2,166.67</td><td>6,753.31</td><td>2,110.41</td><td class="net-profit-neg">-5,416.43</td></tr>
+                <tr><td>2026-05</td><td>80,283.00</td><td>69,846.21</td><td>33,718.86</td><td class="net-profit-pos">46,564.14</td><td>4,014.15</td><td>17,461.55</td><td>9,120.00</td><td>11,646.17</td><td>2,166.67</td><td>6,422.64</td><td>2,007.08</td><td class="net-profit-neg">-6,274.12</td></tr>
+                <tr><td>2026-06</td><td>84,820.30</td><td>73,793.66</td><td>35,624.53</td><td class="net-profit-pos">49,195.77</td><td>4,241.02</td><td>18,448.42</td><td>9,120.00</td><td>11,646.17</td><td>2,166.67</td><td>6,785.62</td><td>2,120.51</td><td class="net-profit-neg">-5,332.64</td></tr>
+                <tr><td>2026-07</td><td>67,993.36</td><td>59,154.22</td><td>28,557.21</td><td class="net-profit-pos">39,436.15</td><td>3,399.67</td><td>14,788.56</td><td>9,120.00</td><td>11,646.17</td><td>2,166.67</td><td>5,439.47</td><td>1,699.83</td><td class="net-profit-neg">-8,824.22</td></tr>
+                <tr><td>2026-08</td><td>53,082.42</td><td>46,181.71</td><td>22,294.62</td><td class="net-profit-pos">30,787.80</td><td>2,654.12</td><td>11,545.43</td><td>9,120.00</td><td>11,646.17</td><td>2,166.67</td><td>4,246.59</td><td>1,327.06</td><td class="net-profit-neg">-11,918.24</td></tr>
+</tbody>
+            <tfoot>
+                <tr class="total-row">
+                    <td>الإجمالي</td>
+                    <td>4,488,372.32</td>
+                    <td>3,934,825.82</td>
+                    <td>1,708,736.27</td>
+                    <td>2,779,636.05</td>
+                    <td>295,053.00</td>
+                    <td>983,706.48</td>
+                    <td>100,320.00</td>
+                    <td>128,107.87</td>
+                    <td>23,833.37</td>
+                    <td>76,532.34</td>
+                    <td>23,916.37</td>
+                    <td class="net-profit-neg">-53,755.49</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <div id="marwah" class="content-section">
+        <h2>🛍️ التقرير التفصيلي - فرع المروة</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>الأشهر</th>
+                    <th>المبيعات</th>
+                    <th>إجمالي مبيعات تطبيقات التوصيل</th>
+                    <th>تكلفة البضاعة</th>
+                    <th>الربح</th>
+                    <th>عمولة المانح ٧٪</th>
+                    <th>عمولة تطبيقات التوصيل</th>
+                    <th>الرواتب</th>
+                    <th>الإيجار</th>
+                    <th>مصاريف التوصيل و التسويق</th>
+                    <th>مصاريف الكهرباء والمياه وسكن الموظفين</th>
+                    <th>مصاريف أخرى</th>
+                    <th>الصافي</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>2025-01</td><td>112,656.08</td><td>101,406.74</td><td>35,865.24</td><td>76,790.84</td><td>7,885.93</td><td>25,351.69</td><td>10,500</td><td>10,000</td><td>3,333.33</td><td>9,012.49</td><td>3,379.68</td><td class="net-profit-pos">7,327.73</td></tr>
+                <tr><td>2025-02</td><td>127,890.97</td><td>116,840.37</td><td>43,785.17</td><td>84,105.80</td><td>8,952.37</td><td>29,210.09</td><td>10,500</td><td>10,000</td><td>3,333.33</td><td>10,231.28</td><td>3,836.73</td><td class="net-profit-pos">8,042.00</td></tr>
+                <tr><td>2025-03</td><td>130,261.22</td><td>111,315.40</td><td>40,196.66</td><td>90,064.55</td><td>9,118.29</td><td>27,828.85</td><td>10,500</td><td>10,000</td><td>3,333.33</td><td>10,420.90</td><td>3,907.84</td><td class="net-profit-pos">14,955.35</td></tr>
+                <tr><td>2025-04</td><td>113,527.91</td><td>106,792.10</td><td>36,227.10</td><td>77,300.81</td><td>7,946.95</td><td>26,698.03</td><td>10,500</td><td>10,000</td><td>3,333.33</td><td>9,082.23</td><td>3,405.84</td><td class="net-profit-pos">6,334.43</td></tr>
+                <tr><td>2025-05</td><td>122,639.77</td><td>117,373.74</td><td>41,378.64</td><td>81,261.13</td><td>8,584.78</td><td>29,343.44</td><td>13,100</td><td>10,000</td><td>2,166.67</td><td>9,811.18</td><td>3,679.19</td><td class="net-profit-pos">4,575.87</td></tr>
+                <tr><td>2025-06</td><td>54,507.13</td><td>55,544.70</td><td>18,688.60</td><td>35,818.53</td><td>3,815.50</td><td>13,886.18</td><td>8,300</td><td>10,000</td><td>2,166.67</td><td>4,360.57</td><td>545.07</td><td class="net-profit-neg">-7,255.45</td></tr>
+                <tr><td>2025-07</td><td>95,972.69</td><td>92,913.35</td><td>34,036.46</td><td>61,936.24</td><td>6,718.09</td><td>23,228.34</td><td>8,300</td><td>10,000</td><td>2,166.67</td><td>7,677.82</td><td>1,919.45</td><td class="net-profit-pos">1,925.88</td></tr>
+                <tr><td>2025-08</td><td>93,242.45</td><td>92,088.07</td><td>32,684.22</td><td>60,558.23</td><td>6,526.97</td><td>23,022.02</td><td>9,700</td><td>10,000</td><td>2,166.67</td><td>7,459.40</td><td>2,797.27</td><td class="net-profit-neg">-1,114.10</td></tr>
+                <tr><td>2025-09</td><td>80,909.82</td><td>77,214.04</td><td>29,089.67</td><td>51,820.15</td><td>5,663.69</td><td>19,303.51</td><td>8,250</td><td>10,000</td><td>2,166.67</td><td>6,472.79</td><td>809.10</td><td class="net-profit-neg">-845.60</td></tr>
+                            <tr><td>2025-10</td><td>88,481.78</td><td>82,288.06</td><td>37,162.35</td><td class="net-profit-pos">51,319.43</td><td>4,424.09</td><td>20,572.01</td><td>7,100.00</td><td>10,000.00</td><td>2,166.67</td><td>7,078.54</td><td>2,212.04</td><td class="net-profit-neg">-2,233.93</td></tr>
+                <tr><td>2025-11</td><td>82,338.23</td><td>76,574.55</td><td>34,582.06</td><td class="net-profit-pos">47,756.17</td><td>4,116.91</td><td>19,143.64</td><td>7,100.00</td><td>10,000.00</td><td>2,166.67</td><td>6,587.06</td><td>2,058.46</td><td class="net-profit-neg">-3,416.56</td></tr>
+                <tr><td>2025-12</td><td>78,726.70</td><td>73,215.83</td><td>33,065.21</td><td class="net-profit-pos">45,661.49</td><td>3,936.34</td><td>18,303.96</td><td>7,100.00</td><td>10,000.00</td><td>2,166.67</td><td>6,298.14</td><td>1,968.17</td><td class="net-profit-neg">-4,111.78</td></tr>
+                <tr><td>2026-01</td><td>106,251.61</td><td>98,814.00</td><td>44,625.68</td><td class="net-profit-pos">61,625.93</td><td>5,312.58</td><td>24,703.50</td><td>7,100.00</td><td>10,000.00</td><td>2,166.67</td><td>8,500.13</td><td>2,656.29</td><td class="net-profit-pos">1,186.76</td></tr>
+                <tr><td>2026-02</td><td>97,522.19</td><td>90,695.64</td><td>40,959.32</td><td class="net-profit-pos">56,562.87</td><td>4,876.11</td><td>22,673.91</td><td>7,100.00</td><td>10,000.00</td><td>2,166.67</td><td>7,801.78</td><td>2,438.05</td><td class="net-profit-neg">-493.65</td></tr>
+                <tr><td>2026-03</td><td>104,229.61</td><td>96,933.54</td><td>43,776.44</td><td class="net-profit-pos">60,453.17</td><td>5,211.48</td><td>24,233.38</td><td>7,100.00</td><td>10,000.00</td><td>2,166.67</td><td>8,338.37</td><td>2,605.74</td><td class="net-profit-pos">797.53</td></tr>
+                <tr><td>2026-04</td><td>79,979.17</td><td>74,380.63</td><td>33,591.25</td><td class="net-profit-pos">46,387.92</td><td>3,998.96</td><td>18,595.16</td><td>7,100.00</td><td>10,000.00</td><td>2,166.67</td><td>6,398.33</td><td>1,999.48</td><td class="net-profit-neg">-3,870.68</td></tr>
+                <tr><td>2026-05</td><td>90,290.48</td><td>83,970.15</td><td>37,922.00</td><td class="net-profit-pos">52,368.48</td><td>4,514.52</td><td>20,992.54</td><td>7,100.00</td><td>10,000.00</td><td>2,166.67</td><td>7,223.24</td><td>2,257.26</td><td class="net-profit-neg">-1,885.75</td></tr>
+                <tr><td>2026-06</td><td>87,875.35</td><td>81,724.08</td><td>36,907.65</td><td class="net-profit-pos">50,967.70</td><td>4,393.77</td><td>20,431.02</td><td>7,100.00</td><td>10,000.00</td><td>2,166.67</td><td>7,030.03</td><td>2,196.88</td><td class="net-profit-neg">-2,350.67</td></tr>
+                <tr><td>2026-07</td><td>73,194.56</td><td>68,070.94</td><td>30,741.72</td><td class="net-profit-pos">42,452.84</td><td>3,659.73</td><td>17,017.74</td><td>7,100.00</td><td>10,000.00</td><td>2,166.67</td><td>5,855.56</td><td>1,829.86</td><td class="net-profit-neg">-5,176.73</td></tr>
+                <tr><td>2026-08</td><td>54,648.70</td><td>50,823.29</td><td>22,952.45</td><td class="net-profit-pos">31,696.25</td><td>2,732.43</td><td>12,705.82</td><td>7,100.00</td><td>10,000.00</td><td>2,166.67</td><td>4,371.90</td><td>1,366.22</td><td class="net-profit-neg">-8,746.78</td></tr>
+</tbody>
+            <tfoot>
+                <tr class="total-row">
+                    <td>الإجمالي</td>
+                    <td>1,875,146.41</td>
+                    <td>1,748,979.22</td>
+                    <td>708,237.89</td>
+                    <td>1,166,908.53</td>
+                    <td>112,389.49</td>
+                    <td>437,244.83</td>
+                    <td>78,100.00</td>
+                    <td>110,000.00</td>
+                    <td>23,833.37</td>
+                    <td>75,483.08</td>
+                    <td>23,588.45</td>
+                    <td class="net-profit-neg">-30,302.24</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <div id="notes-section" class="content-section">
+        <h2>🗒️ ملاحظات وتوصيات</h2>
+        <ul>
+            <li>ارتفعت تكلفة المواد الأولية (المشتريات) خلال آخر ٥ أشهر.</li>
+            <li>خفض المانح النسبة الشهرية إلى ٥٪ كدعم للفروع.</li>
+            <li>ارتفعت نسبة مبيعات الفروع عن طريق تطبيقات التوصيل مما قلل ربحية الفروع.</li>
+            <li>توجد رسوم معلقة للعاملين لتجديد الإقامات، سيتم العمل عليها عند تحسن الربحية.</li>
+            <li>
+                نمو نسبة مبيعات التطبيقات مؤثر وبشكل قوي على ربحية الفروع، حيث بلغت نسبة المبيعات للتطبيقات من إجمالي المبيعات الإجمالية (متوسط الفترة من أكتوبر ٢٠٢٥ حتى أغسطس ٢٠٢٦):
+                <ul>
+                    <li>لفرع النسيم: 87.00%</li>
+                    <li>ولفرع المروة: 93.00%</li>
+                    <li>ولفرع الحمدانية: 81.00%</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>
